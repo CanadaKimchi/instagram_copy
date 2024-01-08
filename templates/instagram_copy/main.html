@@ -70,42 +70,99 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;width: 100%; z-index: 999">
-    <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
-        <a class="navbar-brand" href="main"><img style="width: 100px"
-                                                 src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
-        </a>
-        <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
-        <div style="display: flex">
-            <a href="main" style="color: black"><span class="material-icons"
-                                                      style="padding-right: 10px"> home</span></a>
-            <span id="nav_bar_add_box" class="material-icons-outlined" style="padding-right: 10px">add_box</span>
-
-            <div class="dropdown">
-                <a href="#" role="button" id="dropdownMenuLink"
-                   data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="box" style="width: 25px; height: 25px">
-
-                        <img class="profile"
-                             src="{% get_media_prefix %}{{ user.profile_image }}">
-
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline"> <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" width="120px" , > </span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <svg xmlns="http://www.w3.org/2000/svg"  style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+</svg>
+                                <i class="bi bi-house"></i> <span class="ms-1 d-none d-sm-inline" style="color: black" >
+                                <strong>Home</strong></span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg"  style="margin-left: 6px"width="20" height="20"  fill="black" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg><i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><strong>Search</strong></span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-compass" viewBox="0 0 16 16">
+  <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+  <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+</svg><i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><strong>Explore</strong></span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-film" viewBox="0 0 16 16">
+  <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+</svg><i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><strong>Reels</strong></span></a>
+                            
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-send" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+</svg><i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><strong>Messages</strong></span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+</svg><i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><strong>Notifications</strong></span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px" width="20" height="20" fill="black" class="bi bi-plus-square" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+</svg><i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"  ><strong>Create</strong></span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline" style="color: black"><img src="https://i.pinimg.com/474x/66/98/9b/66989b83569db34144604454034bc1fe.jpg" alt="hugenerd" width="25" height="25" class="rounded-circle" style="margin-right: 8px"><strong>Profile</strong></span></a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg"  style="margin-left: 7px" width="20" height="20" fill="black" class="bi bi-three-dots" viewBox="0 0 16 16">
+  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+</svg><span class="d-none d-sm-inline mx-1" style="color: black"><strong>More</strong></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Your activity</a></li>
+                            <li><a class="dropdown-item" href="#">Saved</a></li>
+                            <li><a class="dropdown-item" href="#">Switch appearance</a></li>
+                            <li><a class="dropdown-item" href="#">Report a problem</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Threads</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Switch Accounts</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
                     </div>
-                </a>
-
-                <ul class="dropdown-menu" style="left:-158px" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="/content/profile">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/user/logout">Log Out</a></li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </div>
-</nav>
-
-
-<div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background-color:#FAFAFA">
+            <div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background-color:#FAFAFA">
     <div style="width: 500px;min-width: 500px;margin-right: 300px">
 
         <!-- feed box -->
@@ -189,7 +246,7 @@
                 Suggested for you
             </div>
             <div>
-                <a href="#" style="font-weight: bold;color: black;text-decoration: none">모두보기</a>
+                <a href="#" style="font-weight: bold;color: black;text-decoration: none">See All</a>
             </div>
         </div>
         <div style="display: flex;flex-direction: row;justify-content: space-between; align-items: center;">
@@ -209,7 +266,7 @@
             </div>
 
             <div>
-                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">팔로우</a>
+                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">Follow</a>
             </div>
         </div>
         <div style="display: flex;flex-direction: row;justify-content: space-between; align-items: center;">
@@ -229,7 +286,7 @@
             </div>
 
             <div>
-                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">팔로우</a>
+                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">Follow</a>
             </div>
         </div>
         <div style="display: flex;flex-direction: row;justify-content: space-between; align-items: center;">
@@ -249,7 +306,7 @@
             </div>
 
             <div>
-                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">팔로우</a>
+                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">Follow</a>
             </div>
         </div>
         <div style="display: flex;flex-direction: row;justify-content: space-between; align-items: center;">
@@ -269,7 +326,7 @@
             </div>
 
             <div>
-                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">팔로우</a>
+                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">Follow</a>
             </div>
         </div>
         <div style="display: flex;flex-direction: row;justify-content: space-between; align-items: center;">
@@ -289,12 +346,12 @@
             </div>
 
             <div>
-                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">팔로우</a>
+                <a href="#" style="font-size: 14px;font-weight: bold;text-decoration: none">Follow</a>
             </div>
         </div>
 
         <div style="margin-top: 40px;font-size: 12px;color: gray; text-align: left"> About • Help • Press • API • Privacy • Terms<br> Location • Language • Meta Verified
-            인기 계정 해시태그 언어
+            
         </div>
         <div style="margin-top: 20px;font-size: 12px;color: gray; text-align: left"> ©2024 INSTAGRAM FOR META</div>
 
@@ -355,6 +412,11 @@
 
     </div>
 </div>
+
+        </div>
+    </div>
+
+
 
 <!-- Optional JavaScript; choose one of the two! -->
 <script>
@@ -445,7 +507,7 @@
 
             },
             error: function (request, status, error) {
-                console.log("Erorr");
+                console.log("Error");
             },
             complete: function () {
                 console.log("Done");
