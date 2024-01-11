@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b12c5d-f412-415d-80a9-fb432612d6cf" name="Changes" comment="inital commit">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+    <list default="true" id="67b12c5d-f412-415d-80a9-fb432612d6cf" name="Changes" comment="made the side nav bar &#10;- added icons&#10;- made different category same as instagram&#10;- changed profile picture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram_copy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_copy/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/instagram_copy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_copy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram_copy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_copy/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/instagram_copy/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/instagram_copy/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +38,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2abrdXcNwmEhBgoZV0yC1BwLnho" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -42,24 +49,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.instagram_copy.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.instagram_copy.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="instagram_copy" type="Python.DjangoServer" factoryName="Django server">
       <module name="instagram_copy" />
@@ -102,7 +119,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704598208444</updated>
-      <workItem from="1704598243008" duration="1880000" />
+      <workItem from="1704598243008" duration="2557000" />
+      <workItem from="1704682257308" duration="4124000" />
+      <workItem from="1704737011414" duration="7226000" />
+      <workItem from="1704822396098" duration="1960000" />
+      <workItem from="1704836044570" duration="75000" />
+      <workItem from="1704850939051" duration="110000" />
+      <workItem from="1704851128277" duration="29000" />
+      <workItem from="1704933827857" duration="4846000" />
+      <workItem from="1704941955687" duration="94000" />
+      <workItem from="1704942203562" duration="470000" />
+      <workItem from="1704942870200" duration="3000" />
+      <workItem from="1704943547921" duration="76000" />
+      <workItem from="1704943671896" duration="284000" />
+      <workItem from="1704943961455" duration="16000" />
+      <workItem from="1704944674007" duration="120000" />
+      <workItem from="1704996005987" duration="180000" />
+      <workItem from="1704996223625" duration="33000" />
+      <workItem from="1704996274699" duration="657000" />
+      <workItem from="1704996976867" duration="1246000" />
+      <workItem from="1704998334783" duration="235000" />
+      <workItem from="1704998574119" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -112,7 +149,39 @@
       <option name="project" value="LOCAL" />
       <updated>1704598518619</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inital commit">
+      <option name="closed" value="true" />
+      <created>1704600206925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704600206925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="inital commit">
+      <option name="closed" value="true" />
+      <created>1704685930270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704685930270</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made the Instagram front page&#10;(but will be updating interface as the newest instagram version)">
+      <option name="closed" value="true" />
+      <created>1704686010810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704686010810</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made the side nav bar &#10;- added icons&#10;- made different category same as instagram&#10;- changed profile picture">
+      <option name="closed" value="true" />
+      <created>1704743678729</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704743678729</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +200,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
+    <MESSAGE value="Made the Instagram front page&#10;(but will be updating interface as the newest instagram version)" />
+    <MESSAGE value="made the side nav bar &#10;- added icons&#10;- made different category same as instagram&#10;- changed profile picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the side nav bar &#10;- added icons&#10;- made different category same as instagram&#10;- changed profile picture" />
   </component>
 </project>
