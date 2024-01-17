@@ -36,3 +36,8 @@ Run the server by typing in the prompt below
 ```
 python manage.py runserver
 ```
+![insta1](https://github.com/CanadaKimchi/instagram_copy/assets/87531391/bfc468db-201d-438f-9f6a-d29453bcea1b)
+![insta2](https://github.com/CanadaKimchi/instagram_copy/assets/87531391/2a64d386-7d73-45aa-9b34-86cb4a83a47c)
+
+
+
